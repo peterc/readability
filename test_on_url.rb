@@ -1,5 +1,6 @@
-require 'rubygems'
 require 'open-uri'
+
+$: << File.expand_path(File.dirname($0) + "/lib")
 require 'readability'
 
 text = open(ARGV.first).read
